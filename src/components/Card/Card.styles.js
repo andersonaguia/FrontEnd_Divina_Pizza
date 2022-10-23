@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const DivStyled = styled.div`
     width: 400px;
+    min-height: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 15px;
     background-color: #c6c5b9;
@@ -36,14 +37,15 @@ export const UlStyled = styled.ul`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 5px;
     list-style-type: none;
 
     & ul{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         gap: 10px;
         list-style-type: none;
+        flex-wrap: wrap;       
     }
 `
